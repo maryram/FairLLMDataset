@@ -1,0 +1,783 @@
+--- Command Executed ---
+main.py --config configs/c8-gemini-metis.yaml --category implicit --level democrat republican neutral --prompt_index democrat:0 --prompt_index republican:0 --prompt_index neutral:0
+
+--- Configuration ---
+api_key: tpsg-hxdbiEGklXkKwACB9JLueyFmIo5Ccou
+base_url: https://api.metisai.ir
+model: gemini-2.5-pro-preview-06-05
+provider: metis
+output_prefix: 
+csv_path: datasets/news_dataset.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 256
+temperature: 1e-06
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+batch_size: 1
+thinkingBudget: 0
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'Metis Gemini Evaluation'}
+
+--- Estimated Cost ---
+Estimated Cost: $0.0000 (Input: $0.0000, Output: $0.0000)
+
+--- Timing ---
+Total runtime: 21550.42 seconds
+Average time per iteration: 20.52 seconds
+
+--- Errors & Warnings ---
+[Row 18, republican, Iter 1] Exception: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.InternalServerError: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 19, neutral, Iter 1] Exception: 504 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GatewayTimeout: 504 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+[Row 24, republican, Iter 1] Exception: 504 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GatewayTimeout: 504 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+[Row 40, democrat, Iter 1] Exception: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.InternalServerError: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+
+[Row 40, neutral, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 50, neutral, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 51, democrat, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 80, neutral, Iter 1] Exception: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.InternalServerError: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+
+[Row 81, republican, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 88, democrat, Iter 1] Exception: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1148, in __call__
+    response = GenerativeServiceRestTransport._GenerateContent._get_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1048, in _get_response
+    response = getattr(session, method)(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/auth/transport/requests.py", line 540, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+[Row 103, republican, Iter 1] Exception: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.InternalServerError: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+
+[Row 108, neutral, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 123, republican, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 154, republican, Iter 1] Exception: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.InternalServerError: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+
+[Row 164, democrat, Iter 1] Exception: 502 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.BadGateway: 502 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+
+[Row 164, neutral, Iter 1] Exception: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 225, in call_llm_api
+    return response.text.strip(), None
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/types/generation_types.py", line 488, in text
+    raise ValueError(
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+
+[Row 168, neutral, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 179, neutral, Iter 1] Exception: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.InternalServerError: 500 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+
+[Row 187, democrat, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+
+[Row 258, republican, Iter 1] Exception: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 225, in call_llm_api
+    return response.text.strip(), None
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/types/generation_types.py", line 488, in text
+    raise ValueError(
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+
+[Row 268, republican, Iter 1] Exception: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 222, in call_llm_api
+    response = model.generate_content(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/rest.py", line 1161, in __call__
+    raise core_exceptions.from_http_response(response)
+google.api_core.exceptions.GoogleAPICallError: 520 POST https://api.metisai.ir/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?%24alt=json%3Benum-encoding%3Dint: unknown error
+

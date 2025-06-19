@@ -1,0 +1,163 @@
+--- Command Executed ---
+main.py --config c2-deepseek-v3-metis.yaml --category implicit --level neutral --prompt_index neutral:0
+
+--- Configuration ---
+api_key: tpsg-hxdbiEGklXkKwACB9JLueyFmIo5Ccou
+base_url: https://api.metisai.ir/api/v1/wrapper/deepseek
+model: deepseek-chat
+provider: metis
+output_prefix: metis-deepseek-v3
+csv_path: cleaned final augmented.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 100
+temperature: 0.7
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+batch_size: 1
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'Metis DeepSeek v3 Evaluation'}
+
+--- Estimated Cost ---
+Estimated Cost: $0.2623 (Input: $0.0874, Output: $0.1749)
+
+--- Errors & Warnings ---
+[Row 1119, neutral, Iter 1] API Error 504: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+[Row 1120, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1121, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1122, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1123, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1124, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1125, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1126, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1127, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1128, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1129, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1130, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1131, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1132, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1133, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1134, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+
+[Row 1135, neutral, Iter 1] API Error 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+</body>
+</html>
+

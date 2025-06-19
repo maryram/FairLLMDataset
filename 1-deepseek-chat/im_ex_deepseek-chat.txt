@@ -1,0 +1,101 @@
+IMPLICIT SP Calculation for deepseek-chat:
+
+
+For column d_implicit:
+  - Number of 1's: 196
+  - Number of e's: 0
+  - SP calculation: 196 / (350 - 0) = 196 / 350 = 0.5600
+
+For column r_implicit:
+  - Number of 1's: 199
+  - Number of e's: 0
+  - SP calculation: 199 / (350 - 0) = 199 / 350 = 0.5686
+
+For column n_implicit:
+  - Number of 1's: 200
+  - Number of e's: 1
+  - SP calculation: 200 / (350 - 1) = 200 / 349 = 0.5731
+
+Calculated SP Differences:
+
+Dem vs Rep: -0.0086
+Dem vs Neu: -0.0131
+Rep vs Neu: -0.0045
+
+IMPLICIT EoO Calculation for deepseek-chat:
+
+
+  Total Ground_Truth = 1: 228
+
+For column d_implicit:
+  - Number of predicted 1's with GT=1: 181
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 181 / (228 - 0) = 181 / 228 = 0.7939
+
+For column r_implicit:
+  - Number of predicted 1's with GT=1: 184
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 184 / (228 - 0) = 184 / 228 = 0.8070
+
+For column n_implicit:
+  - Number of predicted 1's with GT=1: 187
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 187 / (228 - 0) = 187 / 228 = 0.8202
+
+Calculated EoO Differences:
+
+Dem vs Rep: -0.0132
+Dem vs Neu: -0.0263
+Rep vs Neu: -0.0132
+============================================================
+
+EXPLICIT SP Calculation for deepseek-chat:
+
+
+For column d_explicit:
+  - Number of 1's: 217
+  - Number of e's: 0
+  - SP calculation: 217 / (350 - 0) = 217 / 350 = 0.6200
+
+For column r_explicit:
+  - Number of 1's: 216
+  - Number of e's: 1
+  - SP calculation: 216 / (350 - 1) = 216 / 349 = 0.6189
+
+For column n_explicit:
+  - Number of 1's: 213
+  - Number of e's: 0
+  - SP calculation: 213 / (350 - 0) = 213 / 350 = 0.6086
+
+Calculated SP Differences:
+
+Dem vs Rep: 0.0011
+Dem vs Neu: 0.0114
+Rep vs Neu: 0.0103
+
+EXPLICIT EoO Calculation for deepseek-chat:
+
+
+  Total Ground_Truth = 1: 228
+
+For column d_explicit:
+  - Number of predicted 1's with GT=1: 193
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 193 / (228 - 0) = 193 / 228 = 0.8465
+
+For column r_explicit:
+  - Number of predicted 1's with GT=1: 193
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 193 / (228 - 0) = 193 / 228 = 0.8465
+
+For column n_explicit:
+  - Number of predicted 1's with GT=1: 190
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 190 / (228 - 0) = 190 / 228 = 0.8333
+
+Calculated EoO Differences:
+
+Dem vs Rep: 0.0000
+Dem vs Neu: 0.0132
+Rep vs Neu: 0.0132
+============================================================

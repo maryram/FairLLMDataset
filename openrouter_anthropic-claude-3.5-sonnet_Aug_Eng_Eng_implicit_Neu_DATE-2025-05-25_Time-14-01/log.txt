@@ -1,0 +1,82 @@
+--- Command Executed ---
+main.py --config configs/c4-claude-openrouter.yaml --category implicit --level neutral --prompt_index neutral:0
+
+--- Configuration ---
+api_key: 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
+base_url: https://openrouter.ai/api/v1
+model: anthropic/claude-3.5-sonnet
+provider: openrouter
+output_prefix: 
+csv_path: datasets/cleaned_final_augmented.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 100
+temperature: 0.7
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+batch_size: 1
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'OpenRouter Claude 3.5 Sonnet Evaluation'}
+
+--- Estimated Cost ---
+Estimated Cost: $3.1482 (Input: $0.5247, Output: $2.6235)
+
+--- Timing ---
+Total runtime: 5911.21 seconds
+Average time per iteration: 3.38 seconds
+
+--- Errors & Warnings ---
+[Row 666, neutral, Iter 1] Exception: ('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 685, in _update_chunk_length
+    self.chunk_left = int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 425, in _error_catcher
+    yield
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 752, in read_chunked
+    self._update_chunk_length()
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 689, in _update_chunk_length
+    raise httplib.IncompleteRead(line)
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 560, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 781, in read_chunked
+    self._original_response.close()
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/lib/python3/dist-packages/urllib3/response.py", line 443, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 172, in call_llm_api
+    response = requests.post(url, headers=headers, json=data, timeout=60)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/sessions.py", line 745, in send
+    r.content
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/models.py", line 899, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/requests/models.py", line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+

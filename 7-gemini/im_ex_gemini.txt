@@ -1,0 +1,101 @@
+IMPLICIT SP Calculation for gemini:
+
+
+For column d_implicit:
+  - Number of 1's: 210
+  - Number of e's: 5
+  - SP calculation: 210 / (350 - 5) = 210 / 345 = 0.6087
+
+For column r_implicit:
+  - Number of 1's: 211
+  - Number of e's: 8
+  - SP calculation: 211 / (350 - 8) = 211 / 342 = 0.6170
+
+For column n_implicit:
+  - Number of 1's: 212
+  - Number of e's: 8
+  - SP calculation: 212 / (350 - 8) = 212 / 342 = 0.6199
+
+Calculated SP Differences:
+
+Dem vs Rep: -0.0083
+Dem vs Neu: -0.0112
+Rep vs Neu: -0.0029
+
+IMPLICIT EoO Calculation for gemini:
+
+
+  Total Ground_Truth = 1: 228
+
+For column d_implicit:
+  - Number of predicted 1's with GT=1: 207
+  - Number of predicted 'e' with GT=1: 4
+  - EoO calculation: 207 / (228 - 4) = 207 / 224 = 0.9241
+
+For column r_implicit:
+  - Number of predicted 1's with GT=1: 202
+  - Number of predicted 'e' with GT=1: 5
+  - EoO calculation: 202 / (228 - 5) = 202 / 223 = 0.9058
+
+For column n_implicit:
+  - Number of predicted 1's with GT=1: 205
+  - Number of predicted 'e' with GT=1: 6
+  - EoO calculation: 205 / (228 - 6) = 205 / 222 = 0.9234
+
+Calculated EoO Differences:
+
+Dem vs Rep: 0.0183
+Dem vs Neu: 0.0007
+Rep vs Neu: -0.0176
+============================================================
+
+EXPLICIT SP Calculation for gemini:
+
+
+For column d_explicit:
+  - Number of 1's: 224
+  - Number of e's: 3
+  - SP calculation: 224 / (350 - 3) = 224 / 347 = 0.6455
+
+For column r_explicit:
+  - Number of 1's: 215
+  - Number of e's: 8
+  - SP calculation: 215 / (350 - 8) = 215 / 342 = 0.6287
+
+For column n_explicit:
+  - Number of 1's: 217
+  - Number of e's: 1
+  - SP calculation: 217 / (350 - 1) = 217 / 349 = 0.6218
+
+Calculated SP Differences:
+
+Dem vs Rep: 0.0169
+Dem vs Neu: 0.0238
+Rep vs Neu: 0.0069
+
+EXPLICIT EoO Calculation for gemini:
+
+
+  Total Ground_Truth = 1: 228
+
+For column d_explicit:
+  - Number of predicted 1's with GT=1: 211
+  - Number of predicted 'e' with GT=1: 2
+  - EoO calculation: 211 / (228 - 2) = 211 / 226 = 0.9336
+
+For column r_explicit:
+  - Number of predicted 1's with GT=1: 204
+  - Number of predicted 'e' with GT=1: 6
+  - EoO calculation: 204 / (228 - 6) = 204 / 222 = 0.9189
+
+For column n_explicit:
+  - Number of predicted 1's with GT=1: 209
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 209 / (228 - 1) = 209 / 227 = 0.9207
+
+Calculated EoO Differences:
+
+Dem vs Rep: 0.0147
+Dem vs Neu: 0.0129
+Rep vs Neu: -0.0018
+============================================================

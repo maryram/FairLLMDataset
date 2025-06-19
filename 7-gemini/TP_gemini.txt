@@ -1,0 +1,101 @@
+SP Calculation for gemini (TP):
+
+
+For column Neutral:
+  - Number of 1's: 212
+  - Number of e's: 8
+  - SP calculation: 212 / (350 - 8) = 212 / 342 = 0.6199
+
+For column TP_GR_En_implicit_Neu:
+  - Number of 1's: 223
+  - Number of e's: 1
+  - SP calculation: 223 / (350 - 1) = 223 / 349 = 0.6390
+
+For column TP_FR_En_implicit_Neu:
+  - Number of 1's: 220
+  - Number of e's: 2
+  - SP calculation: 220 / (350 - 2) = 220 / 348 = 0.6322
+
+For column TP_CH_En_implicit_Neu:
+  - Number of 1's: 228
+  - Number of e's: 1
+  - SP calculation: 228 / (350 - 1) = 228 / 349 = 0.6533
+
+For column TP_Ar_En_implicit_Neu:
+  - Number of 1's: 220
+  - Number of e's: 4
+  - SP calculation: 220 / (350 - 4) = 220 / 346 = 0.6358
+
+Calculated Differences:
+
+EN vs GR Calculation:
+  - SP Value for EN: 0.6199
+  - SP Value for GR: 0.6390
+  - Difference calculation: 0.6199 - 0.6390 = -0.0191
+
+EN vs FR Calculation:
+  - SP Value for EN: 0.6199
+  - SP Value for FR: 0.6322
+  - Difference calculation: 0.6199 - 0.6322 = -0.0123
+
+EN vs CH Calculation:
+  - SP Value for EN: 0.6199
+  - SP Value for CH: 0.6533
+  - Difference calculation: 0.6199 - 0.6533 = -0.0334
+
+EN vs Ar Calculation:
+  - SP Value for EN: 0.6199
+  - SP Value for Ar: 0.6358
+  - Difference calculation: 0.6199 - 0.6358 = -0.0160
+
+EoO Calculation for gemini (TP):
+
+
+  Total Ground_Truth = 1: 228
+
+For column Neutral:
+  - Number of predicted 1's with GT=1: 205
+  - Number of predicted 'e' with GT=1: 6
+  - EoO calculation: 205 / (228 - 6) = 205 / 222 = 0.9234
+
+For column TP_GR_En_implicit_Neu:
+  - Number of predicted 1's with GT=1: 207
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 207 / (228 - 1) = 207 / 227 = 0.9119
+
+For column TP_FR_En_implicit_Neu:
+  - Number of predicted 1's with GT=1: 209
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 209 / (228 - 1) = 209 / 227 = 0.9207
+
+For column TP_CH_En_implicit_Neu:
+  - Number of predicted 1's with GT=1: 214
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 214 / (228 - 1) = 214 / 227 = 0.9427
+
+For column TP_Ar_En_implicit_Neu:
+  - Number of predicted 1's with GT=1: 207
+  - Number of predicted 'e' with GT=1: 4
+  - EoO calculation: 207 / (228 - 4) = 207 / 224 = 0.9241
+
+Calculated EoO Differences:
+
+EN vs GR Calculation:
+  - EoO Value for EN: 0.9234
+  - EoO Value for GR: 0.9119
+  - Difference calculation: 0.9234 - 0.9119 = 0.0115
+
+EN vs FR Calculation:
+  - EoO Value for EN: 0.9234
+  - EoO Value for FR: 0.9207
+  - Difference calculation: 0.9234 - 0.9207 = 0.0027
+
+EN vs CH Calculation:
+  - EoO Value for EN: 0.9234
+  - EoO Value for CH: 0.9427
+  - Difference calculation: 0.9234 - 0.9427 = -0.0193
+
+EN vs Ar Calculation:
+  - EoO Value for EN: 0.9234
+  - EoO Value for Ar: 0.9241
+  - Difference calculation: 0.9234 - 0.9241 = -0.0007

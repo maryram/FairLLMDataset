@@ -1,0 +1,101 @@
+SP Calculation for deepseek-chat (TPN):
+
+
+For column Neutral:
+  - Number of 1's: 200
+  - Number of e's: 1
+  - SP calculation: 200 / (350 - 1) = 200 / 349 = 0.5731
+
+For column TPN_GR_GR_implicit_Neu:
+  - Number of 1's: 147
+  - Number of e's: 1
+  - SP calculation: 147 / (350 - 1) = 147 / 349 = 0.4212
+
+For column TPN_FR_FR_implicit_Neu:
+  - Number of 1's: 200
+  - Number of e's: 0
+  - SP calculation: 200 / (350 - 0) = 200 / 350 = 0.5714
+
+For column TPN_CH_CH_implicit_Neu:
+  - Number of 1's: 122
+  - Number of e's: 2
+  - SP calculation: 122 / (350 - 2) = 122 / 348 = 0.3506
+
+For column TPN_AR_AR_implicit_Neu:
+  - Number of 1's: 107
+  - Number of e's: 0
+  - SP calculation: 107 / (350 - 0) = 107 / 350 = 0.3057
+
+Calculated Differences:
+
+EN vs GR Calculation:
+  - SP Value for EN: 0.5731
+  - SP Value for GR: 0.4212
+  - Difference calculation: 0.5731 - 0.4212 = 0.1519
+
+EN vs FR Calculation:
+  - SP Value for EN: 0.5731
+  - SP Value for FR: 0.5714
+  - Difference calculation: 0.5731 - 0.5714 = 0.0016
+
+EN vs CH Calculation:
+  - SP Value for EN: 0.5731
+  - SP Value for CH: 0.3506
+  - Difference calculation: 0.5731 - 0.3506 = 0.2225
+
+EN vs AR Calculation:
+  - SP Value for EN: 0.5731
+  - SP Value for AR: 0.3057
+  - Difference calculation: 0.5731 - 0.3057 = 0.2674
+
+EoO Calculation for deepseek-chat (TPN):
+
+
+  Total Ground_Truth = 1: 228
+
+For column Neutral:
+  - Number of predicted 1's with GT=1: 187
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 187 / (228 - 0) = 187 / 228 = 0.8202
+
+For column TPN_GR_GR_implicit_Neu:
+  - Number of predicted 1's with GT=1: 131
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 131 / (228 - 1) = 131 / 227 = 0.5771
+
+For column TPN_FR_FR_implicit_Neu:
+  - Number of predicted 1's with GT=1: 175
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 175 / (228 - 0) = 175 / 228 = 0.7675
+
+For column TPN_CH_CH_implicit_Neu:
+  - Number of predicted 1's with GT=1: 115
+  - Number of predicted 'e' with GT=1: 2
+  - EoO calculation: 115 / (228 - 2) = 115 / 226 = 0.5088
+
+For column TPN_AR_AR_implicit_Neu:
+  - Number of predicted 1's with GT=1: 100
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 100 / (228 - 0) = 100 / 228 = 0.4386
+
+Calculated EoO Differences:
+
+EN vs GR Calculation:
+  - EoO Value for EN: 0.8202
+  - EoO Value for GR: 0.5771
+  - Difference calculation: 0.8202 - 0.5771 = 0.2431
+
+EN vs FR Calculation:
+  - EoO Value for EN: 0.8202
+  - EoO Value for FR: 0.7675
+  - Difference calculation: 0.8202 - 0.7675 = 0.0526
+
+EN vs CH Calculation:
+  - EoO Value for EN: 0.8202
+  - EoO Value for CH: 0.5088
+  - Difference calculation: 0.8202 - 0.5088 = 0.3113
+
+EN vs AR Calculation:
+  - EoO Value for EN: 0.8202
+  - EoO Value for AR: 0.4386
+  - Difference calculation: 0.8202 - 0.4386 = 0.3816

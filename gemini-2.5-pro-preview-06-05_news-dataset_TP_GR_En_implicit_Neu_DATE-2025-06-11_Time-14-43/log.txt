@@ -1,0 +1,41 @@
+--- Command Executed ---
+main.py --config configs/c8-gemini-metis.yaml --category implicit --level neutral --prompt_index neutral:1
+
+--- Configuration ---
+api_key: tpsg-hxdbiEGklXkKwACB9JLueyFmIo5Ccou
+base_url: https://api.metisai.ir
+model: gemini-2.5-pro-preview-06-05
+provider: metis
+output_prefix: 
+csv_path: datasets/news_dataset.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 256
+temperature: 1e-06
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+batch_size: 1
+thinkingBudget: 0
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'Metis Gemini Evaluation'}
+
+--- Estimated Cost ---
+Estimated Cost: $0.0000 (Input: $0.0000, Output: $0.0000)
+
+--- Timing ---
+Total runtime: 6902.01 seconds
+Average time per iteration: 19.72 seconds
+
+--- Errors & Warnings ---
+[Row 62, neutral, Iter 1] Exception: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Traceback (most recent call last):
+  File "/home/ubuntu/CIKM-LLM-Fair/finalProject/CIKM-LLM-Fair/Project/main.py", line 225, in call_llm_api
+    return response.text.strip(), None
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/mammad/lib/python3.12/site-packages/google/generativeai/types/generation_types.py", line 488, in text
+    raise ValueError(
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+

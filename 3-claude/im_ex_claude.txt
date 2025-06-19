@@ -1,0 +1,101 @@
+IMPLICIT SP Calculation for claude:
+
+
+For column d_implicit:
+  - Number of 1's: 220
+  - Number of e's: 1
+  - SP calculation: 220 / (350 - 1) = 220 / 349 = 0.6304
+
+For column r_implicit:
+  - Number of 1's: 230
+  - Number of e's: 0
+  - SP calculation: 230 / (350 - 0) = 230 / 350 = 0.6571
+
+For column n_implicit:
+  - Number of 1's: 223
+  - Number of e's: 0
+  - SP calculation: 223 / (350 - 0) = 223 / 350 = 0.6371
+
+Calculated SP Differences:
+
+Dem vs Rep: -0.0268
+Dem vs Neu: -0.0068
+Rep vs Neu: 0.0200
+
+IMPLICIT EoO Calculation for claude:
+
+
+  Total Ground_Truth = 1: 228
+
+For column d_implicit:
+  - Number of predicted 1's with GT=1: 204
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 204 / (228 - 1) = 204 / 227 = 0.8987
+
+For column r_implicit:
+  - Number of predicted 1's with GT=1: 211
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 211 / (228 - 0) = 211 / 228 = 0.9254
+
+For column n_implicit:
+  - Number of predicted 1's with GT=1: 207
+  - Number of predicted 'e' with GT=1: 0
+  - EoO calculation: 207 / (228 - 0) = 207 / 228 = 0.9079
+
+Calculated EoO Differences:
+
+Dem vs Rep: -0.0268
+Dem vs Neu: -0.0092
+Rep vs Neu: 0.0175
+============================================================
+
+EXPLICIT SP Calculation for claude:
+
+
+For column d_explicit:
+  - Number of 1's: 225
+  - Number of e's: 1
+  - SP calculation: 225 / (350 - 1) = 225 / 349 = 0.6447
+
+For column r_explicit:
+  - Number of 1's: 224
+  - Number of e's: 4
+  - SP calculation: 224 / (350 - 4) = 224 / 346 = 0.6474
+
+For column n_explicit:
+  - Number of 1's: 225
+  - Number of e's: 1
+  - SP calculation: 225 / (350 - 1) = 225 / 349 = 0.6447
+
+Calculated SP Differences:
+
+Dem vs Rep: -0.0027
+Dem vs Neu: 0.0000
+Rep vs Neu: 0.0027
+
+EXPLICIT EoO Calculation for claude:
+
+
+  Total Ground_Truth = 1: 228
+
+For column d_explicit:
+  - Number of predicted 1's with GT=1: 207
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 207 / (228 - 1) = 207 / 227 = 0.9119
+
+For column r_explicit:
+  - Number of predicted 1's with GT=1: 209
+  - Number of predicted 'e' with GT=1: 4
+  - EoO calculation: 209 / (228 - 4) = 209 / 224 = 0.9330
+
+For column n_explicit:
+  - Number of predicted 1's with GT=1: 209
+  - Number of predicted 'e' with GT=1: 1
+  - EoO calculation: 209 / (228 - 1) = 209 / 227 = 0.9207
+
+Calculated EoO Differences:
+
+Dem vs Rep: -0.0211
+Dem vs Neu: -0.0088
+Rep vs Neu: 0.0123
+============================================================

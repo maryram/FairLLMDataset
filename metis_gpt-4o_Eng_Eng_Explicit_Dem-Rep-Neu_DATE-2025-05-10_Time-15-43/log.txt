@@ -1,0 +1,20 @@
+--- Configuration ---
+api_key: tpsg-ORG9TB0EIXMfVDnWUvcKGjcwmgMoQaI
+base_url: https://api.metisai.ir/openai/v1
+model: gpt-4o
+provider: metis
+output_prefix: metis-deepseek
+csv_path: final_dataset.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 100
+temperature: 0.7
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'Metis DeepSeek Evaluation'}
+
+--- Errors & Warnings ---

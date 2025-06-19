@@ -1,0 +1,31 @@
+--- Command Executed ---
+main.py --config configs/c6-llama-openrouter.yaml --category implicit --level neutral --prompt_index neutral:4
+
+--- Configuration ---
+api_key: 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
+base_url: https://openrouter.ai/api/v1
+model: meta-llama/llama-4-maverick
+provider: openrouter
+output_prefix: 
+csv_path: datasets/news_dataset.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 100
+temperature: 1e-06
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+batch_size: 1
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'LLaMA 4 Maverick Evaluation'}
+
+--- Estimated Cost ---
+Estimated Cost: $0.0266 (Input: $0.0056, Output: $0.0210)
+
+--- Timing ---
+Total runtime: 826.50 seconds
+Average time per iteration: 2.36 seconds
+
+--- Errors & Warnings ---

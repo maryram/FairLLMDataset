@@ -1,0 +1,31 @@
+--- Command Executed ---
+main.py --config configs/c1-gpt-metis.yaml --category implicit --level neutral --prompt_index neutral:4
+
+--- Configuration ---
+api_key: tpsg-hxdbiEGklXkKwACB9JLueyFmIo5Ccou
+base_url: https://api.metisai.ir/openai/v1
+model: gpt-4o
+provider: metis
+output_prefix: 
+csv_path: datasets/Arabic.csv
+iter_num: 1
+sleep_rate: 0.5
+max_tokens: 100
+temperature: 1e-06
+seed: 42
+top_p: 1.0
+frequency_penalty: 0
+presence_penalty: 0
+max_data: full
+stream: False
+batch_size: 1
+extra_headers: {'HTTP-Referer': 'https://your-website.com', 'X-Title': 'Metis GPT-4o Evaluation'}
+
+--- Estimated Cost ---
+Estimated Cost: $0.4375 (Input: $0.0875, Output: $0.3500)
+
+--- Timing ---
+Total runtime: 713.85 seconds
+Average time per iteration: 2.04 seconds
+
+--- Errors & Warnings ---
