@@ -1,3 +1,4 @@
+Model: gpt-4o
 SP Calculation for gpt-4o (TPN):
 
 
@@ -99,3 +100,29 @@ EN vs AR Calculation:
   - EoO Value for EN: 0.2611
   - EoO Value for AR: 0.4129
   - Difference calculation: 0.2611 - 0.4129 = -0.1519
+
+Translated Prompt on Translated Data:
+
+For language GR:
+  - Overall Accuracy: 165 / 350 = 0.4714
+  - Accuracy (GT=1): 47 / (228 - 4) = 47 / 224 = 0.2098
+  - Accuracy (GT=0): 118 / (122 - 0) = 118 / 122 = 0.9672
+  - Mean Accuracy: (0.2098 + 0.9672) / 2 = 0.589
+
+For language FR:
+  - Overall Accuracy: 184 / 350 = 0.5257
+  - Accuracy (GT=1): 71 / (228 - 26) = 71 / 202 = 0.3515
+  - Accuracy (GT=0): 113 / (122 - 5) = 113 / 117 = 0.9658
+  - Mean Accuracy: (0.3515 + 0.9658) / 2 = 0.659
+
+For language CH:
+  - Overall Accuracy: 153 / 350 = 0.4371
+  - Accuracy (GT=1): 39 / (228 - 51) = 39 / 177 = 0.2203
+  - Accuracy (GT=0): 114 / (122 - 3) = 114 / 119 = 0.9580
+  - Mean Accuracy: (0.2203 + 0.9580) / 2 = 0.589
+
+For language AR:
+  - Overall Accuracy: 180 / 350 = 0.5143
+  - Accuracy (GT=1): 83 / (228 - 27) = 83 / 201 = 0.4129
+  - Accuracy (GT=0): 97 / (122 - 18) = 97 / 104 = 0.9327
+  - Mean Accuracy: (0.4129 + 0.9327) / 2 = 0.673

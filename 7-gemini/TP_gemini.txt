@@ -1,3 +1,4 @@
+Model: gemini
 SP Calculation for gemini (TP):
 
 
@@ -99,3 +100,29 @@ EN vs Ar Calculation:
   - EoO Value for EN: 0.9234
   - EoO Value for Ar: 0.9241
   - Difference calculation: 0.9234 - 0.9241 = -0.0007
+
+Translated Prompt on Original Data:
+
+For language GR:
+  - Overall Accuracy: 313 / 350 = 0.8943
+  - Accuracy (GT=1): 207 / (228 - 1) = 207 / 227 = 0.9119
+  - Accuracy (GT=0): 106 / (122 - 0) = 106 / 122 = 0.8689
+  - Mean Accuracy: (0.9119 + 0.8689) / 2 = 0.890
+
+For language FR:
+  - Overall Accuracy: 319 / 350 = 0.9114
+  - Accuracy (GT=1): 209 / (228 - 1) = 209 / 227 = 0.9207
+  - Accuracy (GT=0): 110 / (122 - 1) = 110 / 121 = 0.9091
+  - Mean Accuracy: (0.9207 + 0.9091) / 2 = 0.915
+
+For language CH:
+  - Overall Accuracy: 322 / 350 = 0.9200
+  - Accuracy (GT=1): 214 / (228 - 1) = 214 / 227 = 0.9427
+  - Accuracy (GT=0): 108 / (122 - 0) = 108 / 122 = 0.8852
+  - Mean Accuracy: (0.9427 + 0.8852) / 2 = 0.914
+
+For language Ar:
+  - Overall Accuracy: 316 / 350 = 0.9029
+  - Accuracy (GT=1): 207 / (228 - 4) = 207 / 224 = 0.9241
+  - Accuracy (GT=0): 109 / (122 - 0) = 109 / 122 = 0.8934
+  - Mean Accuracy: (0.9241 + 0.8934) / 2 = 0.909

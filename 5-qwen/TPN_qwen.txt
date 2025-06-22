@@ -1,3 +1,4 @@
+Model: qwen
 SP Calculation for qwen (TPN):
 
 
@@ -99,3 +100,29 @@ EN vs AR Calculation:
   - EoO Value for EN: 0.5132
   - EoO Value for AR: 0.4204
   - Difference calculation: 0.5132 - 0.4204 = 0.0928
+
+Translated Prompt on Translated Data:
+
+For language GR:
+  - Overall Accuracy: 228 / 350 = 0.6514
+  - Accuracy (GT=1): 122 / (228 - 0) = 122 / 228 = 0.5351
+  - Accuracy (GT=0): 106 / (122 - 0) = 106 / 122 = 0.8689
+  - Mean Accuracy: (0.5351 + 0.8689) / 2 = 0.702
+
+For language FR:
+  - Overall Accuracy: 230 / 350 = 0.6571
+  - Accuracy (GT=1): 121 / (228 - 0) = 121 / 228 = 0.5307
+  - Accuracy (GT=0): 109 / (122 - 0) = 109 / 122 = 0.8934
+  - Mean Accuracy: (0.5307 + 0.8934) / 2 = 0.712
+
+For language CH:
+  - Overall Accuracy: 205 / 350 = 0.5857
+  - Accuracy (GT=1): 90 / (228 - 0) = 90 / 228 = 0.3947
+  - Accuracy (GT=0): 115 / (122 - 0) = 115 / 122 = 0.9426
+  - Mean Accuracy: (0.3947 + 0.9426) / 2 = 0.669
+
+For language AR:
+  - Overall Accuracy: 204 / 350 = 0.5829
+  - Accuracy (GT=1): 95 / (228 - 2) = 95 / 226 = 0.4204
+  - Accuracy (GT=0): 109 / (122 - 0) = 109 / 122 = 0.8934
+  - Mean Accuracy: (0.4204 + 0.8934) / 2 = 0.657

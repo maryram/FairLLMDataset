@@ -1,3 +1,4 @@
+Model: llama
 SP Calculation for llama (TP):
 
 
@@ -99,3 +100,29 @@ EN vs Ar Calculation:
   - EoO Value for EN: 0.6441
   - EoO Value for Ar: 0.7709
   - Difference calculation: 0.6441 - 0.7709 = -0.1268
+
+Translated Prompt on Original Data:
+
+For language GR:
+  - Overall Accuracy: 257 / 350 = 0.7343
+  - Accuracy (GT=1): 157 / (228 - 23) = 157 / 205 = 0.7659
+  - Accuracy (GT=0): 100 / (122 - 7) = 100 / 115 = 0.8696
+  - Mean Accuracy: (0.7659 + 0.8696) / 2 = 0.818
+
+For language FR:
+  - Overall Accuracy: 281 / 350 = 0.8029
+  - Accuracy (GT=1): 176 / (228 - 3) = 176 / 225 = 0.7822
+  - Accuracy (GT=0): 105 / (122 - 1) = 105 / 121 = 0.8678
+  - Mean Accuracy: (0.7822 + 0.8678) / 2 = 0.825
+
+For language CH:
+  - Overall Accuracy: 270 / 350 = 0.7714
+  - Accuracy (GT=1): 167 / (228 - 0) = 167 / 228 = 0.7325
+  - Accuracy (GT=0): 103 / (122 - 0) = 103 / 122 = 0.8443
+  - Mean Accuracy: (0.7325 + 0.8443) / 2 = 0.788
+
+For language Ar:
+  - Overall Accuracy: 275 / 350 = 0.7857
+  - Accuracy (GT=1): 175 / (228 - 1) = 175 / 227 = 0.7709
+  - Accuracy (GT=0): 100 / (122 - 0) = 100 / 122 = 0.8197
+  - Mean Accuracy: (0.7709 + 0.8197) / 2 = 0.795

@@ -18,9 +18,9 @@ For column n_implicit:
 
 Calculated SP Differences:
 
-Dem vs Rep: -0.0083
-Dem vs Neu: -0.0112
-Rep vs Neu: -0.0029
+Dem vs Rep: 0.6087 - 0.6170 = -0.0083
+Dem vs Neu: 0.6087 - 0.6199 = -0.0112
+Rep vs Neu: 0.6170 - 0.6199 = -0.0029
 
 IMPLICIT EoO Calculation for gemini:
 
@@ -44,9 +44,9 @@ For column n_implicit:
 
 Calculated EoO Differences:
 
-Dem vs Rep: 0.0183
-Dem vs Neu: 0.0007
-Rep vs Neu: -0.0176
+Dem vs Rep: 0.9241 - 0.9058 = 0.0183
+Dem vs Neu: 0.9241 - 0.9234 = 0.0007
+Rep vs Neu: 0.9058 - 0.9234 = -0.0176
 ============================================================
 
 EXPLICIT SP Calculation for gemini:
@@ -69,9 +69,9 @@ For column n_explicit:
 
 Calculated SP Differences:
 
-Dem vs Rep: 0.0169
-Dem vs Neu: 0.0238
-Rep vs Neu: 0.0069
+Dem vs Rep: 0.6455 - 0.6287 = 0.0169
+Dem vs Neu: 0.6455 - 0.6218 = 0.0238
+Rep vs Neu: 0.6287 - 0.6218 = 0.0069
 
 EXPLICIT EoO Calculation for gemini:
 
@@ -95,7 +95,7 @@ For column n_explicit:
 
 Calculated EoO Differences:
 
-Dem vs Rep: 0.0147
-Dem vs Neu: 0.0129
-Rep vs Neu: -0.0018
+Dem vs Rep: 0.9336 - 0.9189 = 0.0147
+Dem vs Neu: 0.9336 - 0.9207 = 0.0129
+Rep vs Neu: 0.9189 - 0.9207 = -0.0018
 ============================================================

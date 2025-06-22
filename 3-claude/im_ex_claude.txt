@@ -18,9 +18,9 @@ For column n_implicit:
 
 Calculated SP Differences:
 
-Dem vs Rep: -0.0268
-Dem vs Neu: -0.0068
-Rep vs Neu: 0.0200
+Dem vs Rep: 0.6304 - 0.6571 = -0.0268
+Dem vs Neu: 0.6304 - 0.6371 = -0.0068
+Rep vs Neu: 0.6571 - 0.6371 = 0.0200
 
 IMPLICIT EoO Calculation for claude:
 
@@ -44,9 +44,9 @@ For column n_implicit:
 
 Calculated EoO Differences:
 
-Dem vs Rep: -0.0268
-Dem vs Neu: -0.0092
-Rep vs Neu: 0.0175
+Dem vs Rep: 0.8987 - 0.9254 = -0.0268
+Dem vs Neu: 0.8987 - 0.9079 = -0.0092
+Rep vs Neu: 0.9254 - 0.9079 = 0.0175
 ============================================================
 
 EXPLICIT SP Calculation for claude:
@@ -69,9 +69,9 @@ For column n_explicit:
 
 Calculated SP Differences:
 
-Dem vs Rep: -0.0027
-Dem vs Neu: 0.0000
-Rep vs Neu: 0.0027
+Dem vs Rep: 0.6447 - 0.6474 = -0.0027
+Dem vs Neu: 0.6447 - 0.6447 = 0.0000
+Rep vs Neu: 0.6474 - 0.6447 = 0.0027
 
 EXPLICIT EoO Calculation for claude:
 
@@ -95,7 +95,7 @@ For column n_explicit:
 
 Calculated EoO Differences:
 
-Dem vs Rep: -0.0211
-Dem vs Neu: -0.0088
-Rep vs Neu: 0.0123
+Dem vs Rep: 0.9119 - 0.9330 = -0.0211
+Dem vs Neu: 0.9119 - 0.9207 = -0.0088
+Rep vs Neu: 0.9330 - 0.9207 = 0.0123
 ============================================================

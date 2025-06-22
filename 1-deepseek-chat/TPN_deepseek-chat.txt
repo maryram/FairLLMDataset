@@ -1,3 +1,4 @@
+Model: deepseek-chat
 SP Calculation for deepseek-chat (TPN):
 
 
@@ -99,3 +100,29 @@ EN vs AR Calculation:
   - EoO Value for EN: 0.8202
   - EoO Value for AR: 0.4386
   - Difference calculation: 0.8202 - 0.4386 = 0.3816
+
+Translated Prompt on Translated Data:
+
+For language GR:
+  - Overall Accuracy: 237 / 350 = 0.6771
+  - Accuracy (GT=1): 131 / (228 - 1) = 131 / 227 = 0.5771
+  - Accuracy (GT=0): 106 / (122 - 0) = 106 / 122 = 0.8689
+  - Mean Accuracy: (0.5771 + 0.8689) / 2 = 0.723
+
+For language FR:
+  - Overall Accuracy: 272 / 350 = 0.7771
+  - Accuracy (GT=1): 175 / (228 - 0) = 175 / 228 = 0.7675
+  - Accuracy (GT=0): 97 / (122 - 0) = 97 / 122 = 0.7951
+  - Mean Accuracy: (0.7675 + 0.7951) / 2 = 0.781
+
+For language CH:
+  - Overall Accuracy: 230 / 350 = 0.6571
+  - Accuracy (GT=1): 115 / (228 - 2) = 115 / 226 = 0.5088
+  - Accuracy (GT=0): 115 / (122 - 0) = 115 / 122 = 0.9426
+  - Mean Accuracy: (0.5088 + 0.9426) / 2 = 0.726
+
+For language AR:
+  - Overall Accuracy: 215 / 350 = 0.6143
+  - Accuracy (GT=1): 100 / (228 - 0) = 100 / 228 = 0.4386
+  - Accuracy (GT=0): 115 / (122 - 0) = 115 / 122 = 0.9426
+  - Mean Accuracy: (0.4386 + 0.9426) / 2 = 0.691

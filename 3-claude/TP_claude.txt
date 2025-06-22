@@ -1,3 +1,4 @@
+Model: claude
 SP Calculation for claude (TP):
 
 
@@ -99,3 +100,29 @@ EN vs Ar Calculation:
   - EoO Value for EN: 0.9079
   - EoO Value for Ar: 0.9119
   - Difference calculation: 0.9079 - 0.9119 = -0.0040
+
+Translated Prompt on Original Data:
+
+For language GR:
+  - Overall Accuracy: 313 / 350 = 0.8943
+  - Accuracy (GT=1): 210 / (228 - 0) = 210 / 228 = 0.9211
+  - Accuracy (GT=0): 103 / (122 - 1) = 103 / 121 = 0.8512
+  - Mean Accuracy: (0.9211 + 0.8512) / 2 = 0.886
+
+For language FR:
+  - Overall Accuracy: 315 / 350 = 0.9000
+  - Accuracy (GT=1): 211 / (228 - 1) = 211 / 227 = 0.9295
+  - Accuracy (GT=0): 104 / (122 - 0) = 104 / 122 = 0.8525
+  - Mean Accuracy: (0.9295 + 0.8525) / 2 = 0.891
+
+For language CH:
+  - Overall Accuracy: 312 / 350 = 0.8914
+  - Accuracy (GT=1): 215 / (228 - 0) = 215 / 228 = 0.9430
+  - Accuracy (GT=0): 97 / (122 - 0) = 97 / 122 = 0.7951
+  - Mean Accuracy: (0.9430 + 0.7951) / 2 = 0.869
+
+For language Ar:
+  - Overall Accuracy: 306 / 350 = 0.8743
+  - Accuracy (GT=1): 207 / (228 - 1) = 207 / 227 = 0.9119
+  - Accuracy (GT=0): 99 / (122 - 1) = 99 / 121 = 0.8182
+  - Mean Accuracy: (0.9119 + 0.8182) / 2 = 0.865

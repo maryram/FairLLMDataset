@@ -1,3 +1,4 @@
+Model: grok
 SP Calculation for grok (TPN):
 
 
@@ -99,3 +100,29 @@ EN vs AR Calculation:
   - EoO Value for EN: 0.6360
   - EoO Value for AR: 0.3772
   - Difference calculation: 0.6360 - 0.3772 = 0.2588
+
+Translated Prompt on Translated Data:
+
+For language GR:
+  - Overall Accuracy: 232 / 350 = 0.6629
+  - Accuracy (GT=1): 112 / (228 - 0) = 112 / 228 = 0.4912
+  - Accuracy (GT=0): 120 / (122 - 0) = 120 / 122 = 0.9836
+  - Mean Accuracy: (0.4912 + 0.9836) / 2 = 0.737
+
+For language FR:
+  - Overall Accuracy: 235 / 350 = 0.6714
+  - Accuracy (GT=1): 126 / (228 - 0) = 126 / 228 = 0.5526
+  - Accuracy (GT=0): 109 / (122 - 0) = 109 / 122 = 0.8934
+  - Mean Accuracy: (0.5526 + 0.8934) / 2 = 0.723
+
+For language CH:
+  - Overall Accuracy: 231 / 350 = 0.6600
+  - Accuracy (GT=1): 117 / (228 - 0) = 117 / 228 = 0.5132
+  - Accuracy (GT=0): 114 / (122 - 0) = 114 / 122 = 0.9344
+  - Mean Accuracy: (0.5132 + 0.9344) / 2 = 0.724
+
+For language AR:
+  - Overall Accuracy: 200 / 350 = 0.5714
+  - Accuracy (GT=1): 86 / (228 - 0) = 86 / 228 = 0.3772
+  - Accuracy (GT=0): 114 / (122 - 0) = 114 / 122 = 0.9344
+  - Mean Accuracy: (0.3772 + 0.9344) / 2 = 0.656

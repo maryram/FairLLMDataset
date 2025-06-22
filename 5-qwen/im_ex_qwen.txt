@@ -18,9 +18,9 @@ For column n_implicit:
 
 Calculated SP Differences:
 
-Dem vs Rep: -0.0800
-Dem vs Neu: -0.0543
-Rep vs Neu: 0.0257
+Dem vs Rep: 0.3057 - 0.3857 = -0.0800
+Dem vs Neu: 0.3057 - 0.3600 = -0.0543
+Rep vs Neu: 0.3857 - 0.3600 = 0.0257
 
 IMPLICIT EoO Calculation for qwen:
 
@@ -44,9 +44,9 @@ For column n_implicit:
 
 Calculated EoO Differences:
 
-Dem vs Rep: -0.1140
-Dem vs Neu: -0.0789
-Rep vs Neu: 0.0351
+Dem vs Rep: 0.4342 - 0.5482 = -0.1140
+Dem vs Neu: 0.4342 - 0.5132 = -0.0789
+Rep vs Neu: 0.5482 - 0.5132 = 0.0351
 ============================================================
 
 EXPLICIT SP Calculation for qwen:
@@ -69,9 +69,9 @@ For column n_explicit:
 
 Calculated SP Differences:
 
-Dem vs Rep: 0.0343
-Dem vs Neu: 0.0743
-Rep vs Neu: 0.0400
+Dem vs Rep: 0.5371 - 0.5029 = 0.0343
+Dem vs Neu: 0.5371 - 0.4629 = 0.0743
+Rep vs Neu: 0.5029 - 0.4629 = 0.0400
 
 EXPLICIT EoO Calculation for qwen:
 
@@ -95,7 +95,7 @@ For column n_explicit:
 
 Calculated EoO Differences:
 
-Dem vs Rep: 0.0351
-Dem vs Neu: 0.0921
-Rep vs Neu: 0.0570
+Dem vs Rep: 0.7412 - 0.7061 = 0.0351
+Dem vs Neu: 0.7412 - 0.6491 = 0.0921
+Rep vs Neu: 0.7061 - 0.6491 = 0.0570
 ============================================================
